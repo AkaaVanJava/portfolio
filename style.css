@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  background-color: white;
+}
+.container {
+  margin: 0 40px;
+}
+
+nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s;
+  font-family: "poppins", sans-serif;
+}
+
+nav ul a:hover {
+  border-bottom: 1px solid black;
+}
+
+nav .btn-talk {
+  text-decoration: none;
+  color: black;
+  background-color: blue;
+  transition: all 0.3s;
+  padding: 4px 15px;
+  border-radius: 4px;
+}
+
+nav .btn-talk a {
+  font-weight: 600;
+}
+
+nav .btn-talk:hover {
+  background-color: rgb(0, 183, 255);
+}
+/* nav style end */
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section .content span {
+  color: blue;
+}
+
+section p {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+section .btn-content {
+  text-decoration: none;
+  color: black;
+  background-color: blue;
+  transition: all 0.3s;
+  padding: 4px 15px;
+  border-radius: 4px;
+}
+
+section .content .btn-content a {
+  font-family: "poppins", sans-serif;
+  font-weight: 2em;
+}
+
+section .btn-content:hover {
+  background-color: rgb(0, 158, 221);
+}
+
+section img {
+  width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  section {
+    flex-direction: column;
+  }
+}
